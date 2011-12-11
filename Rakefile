@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "carl"
   gem.homepage = "http://github.com/Tho85/carl"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{ARel for Cassandra}
+  gem.description = %Q{Cassandra CQL queries - gone awesome!}
   gem.email = "thomas.hollstegge@zweitag.de"
   gem.authors = ["Thomas Hollstegge"]
   # dependencies defined in Gemfile

@@ -16,7 +16,7 @@ module Carl
     end
 
     # Define single argument methods
-    [:from, :using_consistency, :limit, :count, :column_limit, :reversed].each do |meth|
+    [:from, :using_consistency, :limit, :count, :column_limit, :reversed, :truncate].each do |meth|
       class_eval %Q$
         attr_accessor :#{meth}_value
 
@@ -63,9 +63,13 @@ module Carl
     def query
       @sql = []
       @bindings = []
-
+      # TRUNCATE 
+      if truncate_value
+       add_to_sql "TRUNCATE ?", truncate_value 
+       return [@sql.join(" ")] + @bindings
+      end
       # SELECT
-      add_to_sql "SELECT"
+      add_to_sql "SELECT" 
       if select_values
         add_to_sql (["?"] * select_values.count).join(", "), *select_values.map(&:to_s)
       elsif count_value

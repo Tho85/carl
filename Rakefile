@@ -17,7 +17,7 @@ Jeweler::Tasks.new do |gem|
   gem.name = "carl"
   gem.homepage = "http://github.com/Tho85/carl"
   gem.license = "MIT"
-  gem.summary = %Q{ARel for Cassandra}
+  gem.summary = %Q{A CQL statement generator for Cassandra}
   gem.description = %Q{Cassandra CQL queries - gone awesome!}
   gem.email = "thomas.hollstegge@zweitag.de"
   gem.authors = ["Thomas Hollstegge"]

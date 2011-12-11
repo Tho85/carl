@@ -17,15 +17,19 @@ Gem::Specification.new do |s|
     "README.md"
   ]
   s.files = [
-    ".document",
-    ".rspec",
     "Gemfile",
+    "Guardfile",
     "LICENSE.txt",
+    "README.md",
     "Rakefile",
     "VERSION",
+    "carl.gemspec",
     "lib/carl.rb",
+    "lib/carl/base.rb",
+    "spec/carl/base_spec.rb",
     "spec/carl_spec.rb",
-    "spec/spec_helper.rb"
+    "spec/spec_helper.rb",
+    "spec/support/generate_query_matcher.rb"
   ]
   s.homepage = %q{http://github.com/Tho85/carl}
   s.licenses = ["MIT"]

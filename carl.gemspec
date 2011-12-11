@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Thomas Hollstegge"]
+  s.authors = [%q{Thomas Hollstegge}]
   s.date = %q{2011-12-11}
   s.description = %q{Cassandra CQL queries - gone awesome!}
   s.email = %q{thomas.hollstegge@zweitag.de}
@@ -32,13 +32,12 @@ Gem::Specification.new do |s|
     "spec/support/generate_query_matcher.rb"
   ]
   s.homepage = %q{http://github.com/Tho85/carl}
-  s.licenses = ["MIT"]
-  s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
+  s.licenses = [%q{MIT}]
+  s.require_paths = [%q{lib}]
+  s.rubygems_version = %q{1.8.7}
   s.summary = %q{A CQL statement generator for Cassandra}
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then

@@ -75,6 +75,15 @@ describe Carl::Base do
     end
   end
 
+
+  context "deletions" do
+    subject { Carl::Base.new }
+    it "should truncate column family" do
+      expect { subject.truncate('my_cf')}.to generate_query 'TRUNCATE ?', 'my_cf'
+    end
+
+  end
+
   context "execution" do
     subject { Carl::Base.new.from('my_cf') }
 
